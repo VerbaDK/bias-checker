@@ -63,12 +63,18 @@ def analyze_text(text):
 
     for word in words:
         clean = word.strip('.,!?()[]{}"\'')
-        if clean in male_words:
-            male_hits.append(clean)
-            suggestions[clean] = male_words[clean]
-        elif clean in female_words:
-            female_hits.append(clean)
-            suggestions[clean] = female_words[clean]
+        # Check for male-coded words
+        for key in male_words:
+            if clean.startswith(key):
+                male_hits.append(clean)
+                suggestions[clean] = male_words[key]
+                break
+        # Check for female-coded words
+        for key in female_words:
+            if clean.startswith(key):
+                female_hits.append(clean)
+                suggestions[clean] = female_words[key]
+                break
 
     return male_hits, female_hits, suggestions
 
