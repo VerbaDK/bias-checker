@@ -23,6 +23,38 @@ female_words = {
     "omhyggelig": "systematisk",
     "forstående": "reflekteret"
 }
+male_words = {
+    "ambitiøs": "engageret",
+    "ambitiøse": "engageret",           # plural/adjective form
+    "konkurrerende": "målrettet",
+    "handlekraftig": "beslutsom",
+    "handlekraftige": "beslutsom",      # plural/adjective form
+    "selvstændig": "teamorienteret",
+    "selvstændige": "teamorienteret",   # plural/adjective form
+    "modig": "tryg ved udfordringer",
+    "modige": "tryg ved udfordringer",  # plural/adjective form
+    "dominerende": "ansvarsbevidst",
+    "aggressiv": "handlekraftig",
+    "aggressive": "handlekraftig",      # plural/adjective form
+    "beslutsom": "afbalanceret",
+    "beslutsomme": "afbalanceret"       # plural/adjective form
+}
+
+female_words = {
+    "empatisk": "lyttende",
+    "empatiske": "lyttende",            # plural/adjective form
+    "støttende": "opmuntrende",
+    "omsorgsfuld": "respektfuld",
+    "omsorgsfulde": "respektfuld",      # plural/adjective form
+    "lyttende": "dialogsøgende",
+    "samarbejdsvillig": "teamorienteret",
+    "samarbejdsvillige": "teamorienteret", # plural/adjective form
+    "venlig": "inkluderende",
+    "venlige": "inkluderende",          # plural/adjective form
+    "omhyggelig": "systematisk",
+    "omhyggelige": "systematisk",       # plural/adjective form
+    "forstående": "reflekteret"
+}
 
 # 🔍 Function to analyze job description
 def analyze_text(text):
